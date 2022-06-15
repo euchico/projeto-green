@@ -1,0 +1,14 @@
+"Table" para "SQL":
+• Abrir Página da Loteria.
+• Selecionar e copiar tabela.
+• Limpar Estilo (Selecionar e Substituir)
+• Converter para CSV.
+* https://www.convertcsv.com/html-table-to-csv.htm
+• Limpar Código no LibreOffice.
+- Filtrar siglas de estados e excluir linhas.
+* https://superuser.com/questions/38370/openoffice-delete-rows-based-on-cell-value
+* https://mundoeducacao.uol.com.br/geografia/estados-brasil.htm
+• Converter CSV para SQL
+https://www.convertcsv.com/csv-to-sql.htm
+• Inserir Conteúdo na Tabela
+INSERT INTO lotofacil(Concurso,Data,Bola1,Bola2,Bola3,Bola4,Bola5,Bola6,Bola7,Bola8,Bola9,Bola10,Bola11,Bola12,Bola13,Bola14,Bola15) VALUES (0000,'00/00/0000',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);

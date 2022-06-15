@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ef2ab329-30dd-4bf5-bcec-038342c833a2": {
+      "ProjectGuid": "ef2ab329-30dd-4bf5-bcec-038342c833a2",
+      "DisplayName": "ProjetoGreenConsole",
+      "ColorIndex": 0
+    },
+    "41ee2c88-c089-4e10-b7fe-f871fcb19708": {
+      "ProjectGuid": "41ee2c88-c089-4e10-b7fe-f871fcb19708",
+      "DisplayName": "ProjetoGreenBrowser",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
