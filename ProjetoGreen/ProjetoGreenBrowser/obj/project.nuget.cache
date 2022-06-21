@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "CBQ9DpldwzqOGtscimu1AP9mMgzj2b9C+s/DmS2Ew+V0LIq9aqQop7coH38HvdjF5XU3QFIKsonAhuqgA4Bo5A==",
+  "dgSpecHash": "gFpLa3wz9LmtbeXVGp3c/DMNZiiWa7IOWVBvDo7maMqWGahJradD6x1BAewl4ZHps9z8xYmkKSEWF7tLlDZfBQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\eufra\\Desenvolvimento\\Projeto\\Projeto Green\\projeto-green\\ProjetoGreen\\ProjetoGreenBrowser\\ProjetoGreenBrowser.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\eufra\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\eufra\\.nuget\\packages\\selenium.webdriver\\4.2.0\\selenium.webdriver.4.2.0.nupkg.sha512"
+  ],
   "logs": []
 }
