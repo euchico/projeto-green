@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetoGreenConsole
+namespace Sorteios
 {
-    public class Startup
+    class Program
     {
-        public static void Main()
+        static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine();
         }
     }
 }

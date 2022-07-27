@@ -12,5 +12,6 @@ namespace ProjetoGreenConsole
         public int concurso;
         public string data;
         public ConscursoSorteio sorteio;
+
     }
 }
