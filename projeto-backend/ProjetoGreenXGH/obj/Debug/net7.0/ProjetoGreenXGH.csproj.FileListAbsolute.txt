@@ -1,0 +1,15 @@
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\ProjetoGreenXGH\bin\Debug\net7.0\ProjetoGreenXGH.exe
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\ProjetoGreenXGH\bin\Debug\net7.0\ProjetoGreenXGH.deps.json
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\ProjetoGreenXGH\bin\Debug\net7.0\ProjetoGreenXGH.runtimeconfig.json
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\ProjetoGreenXGH\bin\Debug\net7.0\ProjetoGreenXGH.dll
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\ProjetoGreenXGH\bin\Debug\net7.0\ProjetoGreenXGH.pdb
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\ProjetoGreenXGH\obj\Debug\net7.0\ProjetoGreenXGH.csproj.AssemblyReference.cache
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\ProjetoGreenXGH\obj\Debug\net7.0\ProjetoGreenXGH.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\ProjetoGreenXGH\obj\Debug\net7.0\ProjetoGreenXGH.AssemblyInfoInputs.cache
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\ProjetoGreenXGH\obj\Debug\net7.0\ProjetoGreenXGH.AssemblyInfo.cs
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\ProjetoGreenXGH\obj\Debug\net7.0\ProjetoGreenXGH.csproj.CoreCompileInputs.cache
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\ProjetoGreenXGH\obj\Debug\net7.0\ProjetoGreenXGH.dll
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\ProjetoGreenXGH\obj\Debug\net7.0\refint\ProjetoGreenXGH.dll
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\ProjetoGreenXGH\obj\Debug\net7.0\ProjetoGreenXGH.pdb
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\ProjetoGreenXGH\obj\Debug\net7.0\ProjetoGreenXGH.genruntimeconfig.cache
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\ProjetoGreenXGH\obj\Debug\net7.0\ref\ProjetoGreenXGH.dll
