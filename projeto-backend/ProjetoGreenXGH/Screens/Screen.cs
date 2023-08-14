@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ProjetoGreenXGH
+﻿namespace ProjetoGreenXGH.Screens
 {
-    abstract class Menu
+    abstract class Screen
     {
+        public void SetConsole()
+        {
+            Console.Title = "Projeto Green XGH";
+        }
+
         public void ShowLogo()
         {
-            Console.Clear();
             Console.WriteLine(@"
 █▀█ █▀█ █▀█ ░░█ █▀▀ ▀█▀ █▀█   █▀▀ █▀█ █▀▀ █▀▀ █▄░█
 █▀▀ █▀▄ █▄█ █▄█ ██▄ ░█░ █▄█   █▄█ █▀▄ ██▄ ██▄ █░▀█
@@ -33,7 +31,8 @@ namespace ProjetoGreenXGH
             ShowLogo();
             ShowScreenTitle(title);
         }
+        public abstract void ScreenLoop();
+        public abstract void ShowScreen();
 
-        public abstract void ShowMenu();
     }
 }
