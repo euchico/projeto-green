@@ -1,0 +1,15 @@
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\Lottery\bin\Debug\net7.0\Lottery.exe
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\Lottery\bin\Debug\net7.0\Lottery.deps.json
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\Lottery\bin\Debug\net7.0\Lottery.runtimeconfig.json
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\Lottery\bin\Debug\net7.0\Lottery.dll
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\Lottery\bin\Debug\net7.0\Lottery.pdb
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\Lottery\obj\Debug\net7.0\Lottery.csproj.AssemblyReference.cache
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\Lottery\obj\Debug\net7.0\Lottery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\Lottery\obj\Debug\net7.0\Lottery.AssemblyInfoInputs.cache
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\Lottery\obj\Debug\net7.0\Lottery.AssemblyInfo.cs
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\Lottery\obj\Debug\net7.0\Lottery.csproj.CoreCompileInputs.cache
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\Lottery\obj\Debug\net7.0\Lottery.dll
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\Lottery\obj\Debug\net7.0\refint\Lottery.dll
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\Lottery\obj\Debug\net7.0\Lottery.pdb
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\Lottery\obj\Debug\net7.0\Lottery.genruntimeconfig.cache
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\Lottery\obj\Debug\net7.0\ref\Lottery.dll
