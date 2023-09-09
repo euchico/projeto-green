@@ -12,8 +12,10 @@ class Lottery
         //Screen mainScreen = new ScreenStart("início");
         //mainScreen.ScreenLoop();
 
-        Screen screen = new();
-        screen.ShowLogo();
-        screen.ShowScreenTitle("Teste Teste");
+        //Screen screen = new();
+        //screen.ShowLogo();
+        //screen.ShowScreenTitle("Teste Teste");
+
+        Console.WriteLine("Lottery");
     }
 }

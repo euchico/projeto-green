@@ -1,0 +1,15 @@
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\LotteryData\bin\Debug\net7.0\LotteryData.exe
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\LotteryData\bin\Debug\net7.0\LotteryData.deps.json
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\LotteryData\bin\Debug\net7.0\LotteryData.runtimeconfig.json
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\LotteryData\bin\Debug\net7.0\LotteryData.dll
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\LotteryData\bin\Debug\net7.0\LotteryData.pdb
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\LotteryData\obj\Debug\net7.0\LotteryData.csproj.AssemblyReference.cache
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\LotteryData\obj\Debug\net7.0\LotteryData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\LotteryData\obj\Debug\net7.0\LotteryData.AssemblyInfoInputs.cache
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\LotteryData\obj\Debug\net7.0\LotteryData.AssemblyInfo.cs
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\LotteryData\obj\Debug\net7.0\LotteryData.csproj.CoreCompileInputs.cache
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\LotteryData\obj\Debug\net7.0\LotteryData.dll
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\LotteryData\obj\Debug\net7.0\refint\LotteryData.dll
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\LotteryData\obj\Debug\net7.0\LotteryData.pdb
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\LotteryData\obj\Debug\net7.0\LotteryData.genruntimeconfig.cache
+C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\LotteryData\obj\Debug\net7.0\ref\LotteryData.dll

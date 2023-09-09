@@ -45,5 +45,5 @@ class Screen
         ShowScreenTitle(screenTitle);
     }
 
-    internal abstract bool ScreenLoop();
+    //internal abstract bool ScreenLoop();
 }
