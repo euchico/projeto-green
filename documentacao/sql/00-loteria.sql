@@ -1,0 +1,2 @@
+CREATE DATABASE Loteria;
+USE Loteria;
