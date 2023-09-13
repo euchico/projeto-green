@@ -19,27 +19,19 @@ CREATE TABLE ConcursoDiaDeSorte (
 	valorEstimadoProximoConcurso DECIMAL,
 );
 
-CREATE TABLE Dezenas (
-    id INT PRIMARY KEY,
-    dezena INT
-);
-
 CREATE TABLE ConcursoDiaDeSorte_DezenasOrdemSorteio (
     id INT PRIMARY KEY,
     concursoid INT,
-    dezenasid INT,
-	ordem INT,
+	posicao INT,
+    dezenas INT,
     FOREIGN KEY (concursoid) REFERENCES ConcursoDiaDeSorte (id),
-    FOREIGN KEY (dezenasid) REFERENCES Dezenas (id)
 );
 
 CREATE TABLE ConcursoDiaDeSorte_Dezenas (
     id INT PRIMARY KEY,
     concursoid INT,
-    dezenasid INT,
-	posicao INT,
+    dezenas INT,
     FOREIGN KEY (concursoid) REFERENCES ConcursoDiaDeSorte (id),
-    FOREIGN KEY (dezenasid) REFERENCES Dezenas (id)
 );
 
 CREATE TABLE Premiacoes (
