@@ -7,20 +7,21 @@ CREATE TABLE ConcursoDuplaSena (
 	-- Dezenas
 	-- Premiacoes
 	-- EstadosPremiados
-	estadosPremiados VARCHAR(255),
 	observacao VARCHAR(255),
 	acumulou BIT,
 	proximoConcurso INT,
 	dataProximoConcurso DATE,
 	-- LocalGanhadores
 	valorArrecadado DECIMAL,
+	valorAcumuladoConcursoEspecial DECIMAL,
 	valorAcumuladoProximoConcurso DECIMAL,
-	valorEstimadoProximoConcurso DECIMAL,
+	valorEstimadoProximoConcurso DECIMAL
 );
 
 CREATE TABLE ConcursoDuplaSena_DezenasOrdemSorteio (
     id INT PRIMARY KEY,
     concursoid INT,
+	numeroSorteio INT,
 	posicao INT,
     dezenas INT,
     FOREIGN KEY (concursoid) REFERENCES ConcursoDuplaSena (id)
@@ -29,6 +30,7 @@ CREATE TABLE ConcursoDuplaSena_DezenasOrdemSorteio (
 CREATE TABLE ConcursoDuplaSena_Dezenas (
     id INT PRIMARY KEY,
     concursoid INT,
+	numeroSorteio INT,
     dezenas INT,
     FOREIGN KEY (concursoid) REFERENCES ConcursoDuplaSena (id)
 );

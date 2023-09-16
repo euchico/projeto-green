@@ -8,7 +8,6 @@ CREATE TABLE ConcursoDiaDeSorte (
 	mesSorte VARCHAR(255),
 	-- Premiacoes
 	-- EstadosPremiados
-	estadosPremiados VARCHAR(255),
 	observacao VARCHAR(255),
 	acumulou BIT,
 	proximoConcurso INT,
@@ -16,7 +15,7 @@ CREATE TABLE ConcursoDiaDeSorte (
 	-- LocalGanhadores
 	valorArrecadado DECIMAL,
 	valorAcumuladoProximoConcurso DECIMAL,
-	valorEstimadoProximoConcurso DECIMAL,
+	valorEstimadoProximoConcurso DECIMAL
 );
 
 CREATE TABLE ConcursoDiaDeSorte_DezenasOrdemSorteio (
@@ -24,14 +23,14 @@ CREATE TABLE ConcursoDiaDeSorte_DezenasOrdemSorteio (
     concursoid INT,
 	posicao INT,
     dezenas INT,
-    FOREIGN KEY (concursoid) REFERENCES ConcursoDiaDeSorte (id),
+    FOREIGN KEY (concursoid) REFERENCES ConcursoDiaDeSorte (id)
 );
 
 CREATE TABLE ConcursoDiaDeSorte_Dezenas (
     id INT PRIMARY KEY,
     concursoid INT,
     dezenas INT,
-    FOREIGN KEY (concursoid) REFERENCES ConcursoDiaDeSorte (id),
+    FOREIGN KEY (concursoid) REFERENCES ConcursoDiaDeSorte (id)
 );
 
 CREATE TABLE Premiacoes (
