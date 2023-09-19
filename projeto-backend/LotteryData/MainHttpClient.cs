@@ -21,6 +21,8 @@ internal class MainHttpClient
 
     public async Task<string?> ConnectionAsync(string url)
     {
+
+
         using (HttpClient client = new HttpClient())
         {
             try
