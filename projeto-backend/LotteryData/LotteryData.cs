@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using LotteryData.Model;
+using Newtonsoft.Json;
 using System.Collections.Generic;
 
 namespace LotteryData;
@@ -17,19 +18,18 @@ class LotteryData
         lotteryList = json.GetLotteryList(response);
         lotteryList.Sort();
 
-        try
-        {
-            string strConnection = "server=localhost;uid=admin;pwd=%iI^#k2s.7PID*cC,Np|;database=lottery";
-            var connection = new MySqlConnection(strConnection);
-            connection.Open();
+        response = await client.ConnectionAsync(apiUrlBase + "diadesorte");
+        var lotteryBase = JsonConvert.DeserializeObject<LotteryResult[]>(response!);
 
-            Console.WriteLine("Conexão realizada!");
-        }catch (Exception ex)
+        DatabaseProcess database = new ();
+        bool tableStatus = database.UpdateLotteryDatabase(lotteryBase);
+
+        foreach (var result in lotteryBase)
         {
-            Console.WriteLine(ex.Message);
+            Console.WriteLine($"#{result.Loteria}: {result.Concurso}");
         }
 
-        response = await client.ConnectionAsync(apiUrlBase + "diadesorte");
+        Console.ReadKey();
 
         //foreach(string lottery in lotteryList)
         //{
