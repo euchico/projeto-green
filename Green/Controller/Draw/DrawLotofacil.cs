@@ -5,18 +5,33 @@ internal class DrawLotofacil : Draw
     private const int MinLotofacilNumber = 1;
     private const int MaxLotofacilNumber = 25;
 
-    public override List<int> SimpleDraw()
+    public override List<List<int>> SimpleDraw(int numberOfDraws)
     {
-        List<int> drawnNumbers = new List<int>();
+        List<List<int>> drawList = new List<List<int>>();
+        List<int> drawSingle = new List<int>();
+        Random random = new Random();
+        int countDraws = 0, countNumbers = 0;
 
-        drawnNumbers.Add(1);
-        drawnNumbers.Add(2);
-        drawnNumbers.Add(3);
-        drawnNumbers.Add(4);
-        drawnNumbers.Add(5);
-        drawnNumbers.Add(6);
+        while (countDraws < numberOfDraws)
+        {
+            while (countNumbers < 15) 
+            {
+                int pick = random.Next(MinLotofacilNumber, MaxLotofacilNumber + 1);
 
-        return drawnNumbers;
+                if (!drawSingle.Contains(pick))
+                {
+                    drawSingle.Add(pick);
+                    countNumbers++;
+                }
+            }
+
+            drawList.Add(drawSingle);
+            drawSingle.Clear();
+
+            countDraws++;
+        }
+
+        return drawList;
     }
 
 }

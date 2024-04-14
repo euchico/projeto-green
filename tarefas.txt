@@ -1,0 +1,7 @@
+# TELAS ========================================= //
+
+[OK] Início
+
+[OK] Entrar
+[OK] Cadastrar
+[OK] Fechar

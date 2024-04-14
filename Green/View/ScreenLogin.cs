@@ -1,4 +1,6 @@
-﻿namespace Green.View;
+﻿using Green.Controller.General;
+
+namespace Green.View;
 
 internal class ScreenLogin : Screen
 {
@@ -36,21 +38,21 @@ internal class ScreenLogin : Screen
             StatusLoop = false;
             statusScreenLogin = false;
 
-            Message.ShowAlertMessage("AlertReturnScreenStart");
+            TextContent.ShowAlertMessage("AlertReturnScreenStart");
         }
         else
         {
-            //Logon logon = new Logon();
-            //statusLogonScreen = logon.UserValidation(user, password);
+            LoginController login = new LoginController();
+            statusScreenLogin = login.UserValidation(user, password);
 
-            if (user == "admin" && password == "admin")
+            if (statusScreenLogin)
             {
                 statusScreenLogin = true;
                 StatusLoop = false;
             }
             else
             {
-               // Message.ShowErroMessage("IncorrectLogon");
+              TextContent.ShowErroMessage("ErrorInvalidLoginUserOrPassword");
             }
         }
     }

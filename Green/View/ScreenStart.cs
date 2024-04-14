@@ -33,9 +33,9 @@ internal class ScreenStart : Screen
             int option = int.Parse(Console.ReadLine()!);
             SelectOption(option);
         }
-        catch (Exception e)
+        catch
         {
-            Message.ShowErroMessage("ErrorInvalidOption");
+            TextContent.ShowErroMessage("ErrorInvalidOption");
             StatusLoop = true;
         }
     }
@@ -45,28 +45,28 @@ internal class ScreenStart : Screen
         switch (option)
         {
             case 1:
-                Screen screenLogin = new ScreenLogin("entrar");
+                Screen screenLogin = new ScreenLogin(TextContent.GetTitle("ScreenTitleLogin"));
 
                 if (screenLogin.ScreenLoop())
                 {
-                    Screen screenMenuMain = new ScreenMenuGames("tela principal");
+                    Screen screenMenuMain = new ScreenMenuGames(TextContent.GetTitle("ScreenTitleMenuGames"));
                     bool statusScreenMain = screenMenuMain.ScreenLoop();
                     Thread.Sleep(3000);
                 }
                 break;
 
             case 2:
-                Screen screenUserCreate = new ScreenUserCreate("cadastrar usuário");
+                Screen screenUserCreate = new ScreenUserCreate(TextContent.GetTitle("ScreenTitleUserCreate"));
                 StatusLoop = screenUserCreate.ScreenLoop();
                 break;
 
             case 0:
-                Screen screenClose = new ScreenClose("fechar");
+                Screen screenClose = new ScreenClose(TextContent.GetTitle("ScreenTitleClose"));
                 StatusLoop = screenClose.ScreenLoop();
                 break;
 
             default:
-                Message.ShowErroMessage("ErrorInvalidOption");
+                TextContent.ShowErroMessage("ErrorInvalidOption");
                 break;
         }
     }

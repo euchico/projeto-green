@@ -19,13 +19,13 @@ class Green
         internal string Name {  get; set; }
     }
 
+    protected static TextManager? TextContent { get; set; }
     public static string UserRecordFilePath = DataFile.GetDataFilePath("UserRecord.txt");
 
 
     static void Main(string[] args)
     {
-        Screen mainScreen = new ScreenStart("início");
-        mainScreen.ScreenLoop();
+        new ScreenStart(TextContent?.GetTitle("ScreenTitleStart") ?? "Início").ScreenLoop();
     }
 
     internal static List<Game> GameList()

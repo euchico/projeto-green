@@ -3,15 +3,19 @@ using System.Resources;
 
 namespace Green.Utility;
 
-internal class MessageManager
+internal class TextManager
 {
     internal ResourceManager ResourceManager { get; }
 
-    public MessageManager()
+    public TextManager()
     {
-        ResourceManager = new ResourceManager("Green.Resource.GeneralMessageResource", typeof(Screen).Assembly);
+        ResourceManager = new ResourceManager("Green.Resource.GeneralTextResource", typeof(Screen).Assembly);
     }
 
+    internal string GetTitle(string resourceName)
+    {
+        return ResourceManager.GetString(resourceName)!;
+    }
     internal string GetMessage(string resourceName)
     {
         return ResourceManager.GetString(resourceName)!;
@@ -21,7 +25,7 @@ internal class MessageManager
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("\nMensagem: " + GetMessage(message));
         Console.ResetColor();
-        Thread.Sleep(3000);
+        Thread.Sleep(2000);
     }
 
     internal void ShowSucessMessage(string message, string word)
@@ -29,7 +33,7 @@ internal class MessageManager
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("\nMensagem: " + String.Format(GetMessage(message), word));
         Console.ResetColor();
-        Thread.Sleep(3000);
+        Thread.Sleep(2000);
     }
 
     internal void ShowAlertMessage(string message)
@@ -45,6 +49,6 @@ internal class MessageManager
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("\nMensagem: " + GetMessage(message));
         Console.ResetColor();
-        Thread.Sleep(1000);
+        Thread.Sleep(2000);
     }
 }

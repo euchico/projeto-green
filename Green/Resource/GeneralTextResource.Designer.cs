@@ -22,14 +22,14 @@ namespace Green.Resource {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class GeneralMessageResource {
+    internal class GeneralTextResource {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal GeneralMessageResource() {
+        internal GeneralTextResource() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Green.Resource {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Green.Resource.GeneralMessageResource", typeof(GeneralMessageResource).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Green.Resource.GeneralTextResource", typeof(GeneralTextResource).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -70,7 +70,16 @@ namespace Green.Resource {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a Opção inválida!.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Usuário e/ou senha estão incorretos..
+        /// </summary>
+        internal static string ErrorInvalidLoginUserOrPassword {
+            get {
+                return ResourceManager.GetString("ErrorInvalidLoginUserOrPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Opção inválida..
         /// </summary>
         internal static string ErrorInvalidOption {
             get {
@@ -93,6 +102,51 @@ namespace Green.Resource {
         internal static string ErrorUnconfirmedPassword {
             get {
                 return ResourceManager.GetString("ErrorUnconfirmedPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Fechar.
+        /// </summary>
+        internal static string ScreenTitleClose {
+            get {
+                return ResourceManager.GetString("ScreenTitleClose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Entrar.
+        /// </summary>
+        internal static string ScreenTitleLogin {
+            get {
+                return ResourceManager.GetString("ScreenTitleLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Seleção de Jogo.
+        /// </summary>
+        internal static string ScreenTitleMenuGames {
+            get {
+                return ResourceManager.GetString("ScreenTitleMenuGames", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Início.
+        /// </summary>
+        internal static string ScreenTitleStart {
+            get {
+                return ResourceManager.GetString("ScreenTitleStart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Cadastrar Usuário.
+        /// </summary>
+        internal static string ScreenTitleUserCreate {
+            get {
+                return ResourceManager.GetString("ScreenTitleUserCreate", resourceCulture);
             }
         }
         

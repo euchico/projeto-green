@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Green
-build_property.ProjectDir = C:\Users\eufra\Desenvolvimento\project\projeto-green\Green\
+build_property.ProjectDir = C:\Users\eufra\development\project\projeto-green\Green\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -2,5 +2,5 @@
 
 internal abstract class Draw
 {
-    public abstract List<int> SimpleDraw ();
+    public abstract List<List<int>> SimpleDraw (int numberOfDraws);
 }

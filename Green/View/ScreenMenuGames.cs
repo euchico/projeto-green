@@ -37,14 +37,34 @@ internal class ScreenMenuGames : Screen
         try
         {
             int option = int.Parse(Console.ReadLine()!);
-            
-            Screen screenMenuTasks = new ScreenMenuTasks("");
-            screenMenuTasks.ScreenLoop(Green.GameList()[option].Tag);
+            SelectOption(option);
         }
-        catch (Exception e)
+        catch
         {
-            Message.ShowErroMessage("ErrorInvalidOption");
+            TextContent.ShowErroMessage("ErrorInvalidOption");
             StatusLoop = true;
+        }
+    }
+
+    private void SelectOption(int option)
+    {
+        int selectOption = option;
+
+        if (selectOption > 0 && selectOption < Green.GameList().Count)
+        {
+            ScreenMenuTasks screenMenuTask = new ScreenMenuTasks("tarefa");
+            screenMenuTask.ScreenLoop("LOTERIA");
+        }
+        else if (option == 0)
+        {
+            TextContent.ShowAlertMessage("AlertReturnScreenStart");
+            
+            Screen mainScreen = new ScreenStart("início");
+            mainScreen.ScreenLoop();
+        }
+        else
+        {
+            TextContent.ShowErroMessage("ErrorInvalidOption");
         }
     }
 }

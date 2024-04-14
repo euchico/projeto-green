@@ -120,14 +120,32 @@
   <data name="AlertReturnScreenStart" xml:space="preserve">
     <value>Voltando ao início...</value>
   </data>
+  <data name="ErrorInvalidLoginUserOrPassword" xml:space="preserve">
+    <value>Usuário e/ou senha estão incorretos.</value>
+  </data>
   <data name="ErrorInvalidOption" xml:space="preserve">
-    <value>Opção inválida!</value>
+    <value>Opção inválida.</value>
   </data>
   <data name="ErrorLoginWithSpecialCharacter" xml:space="preserve">
     <value>Usuário ou/e Senha com caracteres especiais</value>
   </data>
   <data name="ErrorUnconfirmedPassword" xml:space="preserve">
     <value>A senha não foi confirmada.</value>
+  </data>
+  <data name="ScreenTitleClose" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="ScreenTitleLogin" xml:space="preserve">
+    <value>Entrar</value>
+  </data>
+  <data name="ScreenTitleMenuGames" xml:space="preserve">
+    <value>Seleção de Jogo</value>
+  </data>
+  <data name="ScreenTitleStart" xml:space="preserve">
+    <value>Início</value>
+  </data>
+  <data name="ScreenTitleUserCreate" xml:space="preserve">
+    <value>Cadastrar Usuário</value>
   </data>
   <data name="SucessRegisteredUser" xml:space="preserve">
     <value>{0} regristrado</value>

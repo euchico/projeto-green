@@ -42,11 +42,11 @@ internal class ScreenUserCreate : Screen
             StatusLoop = false;
             statusScreenUserCreate = true;
 
-            Message.ShowAlertMessage("AlertReturnScreenStart");
+            TextContent.ShowAlertMessage("AlertReturnScreenStart");
         }
         else if (CheckSpecialChar(user) || CheckSpecialChar(password))
         {
-            Message.ShowErroMessage("ErrorLoginWithSpecialCharacter");
+            TextContent.ShowErroMessage("ErrorLoginWithSpecialCharacter");
             StatusLoop = true;
         }
         else
@@ -56,7 +56,7 @@ internal class ScreenUserCreate : Screen
 
             if (password != confirmPassword)
             {
-                Message.ShowErroMessage("ErrorUnconfirmedPassword");
+                TextContent.ShowErroMessage("ErrorUnconfirmedPassword");
             }
             else
             {
@@ -66,7 +66,7 @@ internal class ScreenUserCreate : Screen
                 UserController userController = new UserController();
                 userController.CreateUser(user, password);
 
-                Message.ShowSucessMessage("SucessRegisteredUser", user);
+                TextContent.ShowSucessMessage("SucessRegisteredUser", user);
             }
         }
     }

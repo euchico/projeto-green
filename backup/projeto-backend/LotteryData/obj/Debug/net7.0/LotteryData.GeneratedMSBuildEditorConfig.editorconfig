@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LotteryData
-build_property.ProjectDir = C:\Users\eufra\Desenvolvimento\3-github\projeto-green\projeto-backend\LotteryData\
+build_property.ProjectDir = C:\Users\eufra\development\project\projeto-green\backup\projeto-backend\LotteryData\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

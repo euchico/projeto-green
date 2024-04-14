@@ -37,21 +37,21 @@ internal class ScreenClose : Screen
         switch (option)
         {
             case "S":
-                Message.ShowSucessMessage("SucessThanksAccess");
+                TextContent.ShowSucessMessage("SucessThanksAccess");
 
                 StatusLoop = false;
                 statusCloseScreen = true;
                 break;
 
             case "N":
-                Message.ShowAlertMessage("AlertReturnScreenStart");
+                TextContent.ShowAlertMessage("AlertReturnScreenStart");
 
                 StatusLoop = false;
                 statusCloseScreen = false;
                 break;
 
             default:
-                Message.ShowErroMessage("ErrorInvalidOption");
+                TextContent.ShowErroMessage("ErrorInvalidOption");
                 break;
         }
     }

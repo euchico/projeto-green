@@ -4,7 +4,7 @@ namespace Green.View;
 
 internal class Screen
 {
-    protected MessageManager Message { get; set; } = new MessageManager();
+    protected TextManager TextContent { get; set; } = new TextManager();
 
     protected string ScreenTitle { get; }
 
@@ -49,4 +49,5 @@ internal class Screen
 
     internal virtual bool ScreenLoop() { return true; }
     internal virtual bool ScreenLoop(string gameTag) { return true; }
+    internal virtual bool ScreenLoop(List<List<int>> draw) { return true; }
 }

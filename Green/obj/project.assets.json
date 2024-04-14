@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eufra\\Desenvolvimento\\project\\projeto-green\\Green\\Green.csproj",
+      "projectUniqueName": "C:\\Users\\eufra\\development\\project\\projeto-green\\Green\\Green.csproj",
       "projectName": "Green",
-      "projectPath": "C:\\Users\\eufra\\Desenvolvimento\\project\\projeto-green\\Green\\Green.csproj",
+      "projectPath": "C:\\Users\\eufra\\development\\project\\projeto-green\\Green\\Green.csproj",
       "packagesPath": "C:\\Users\\eufra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eufra\\Desenvolvimento\\project\\projeto-green\\Green\\obj\\",
+      "outputPath": "C:\\Users\\eufra\\development\\project\\projeto-green\\Green\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\eufra\\AppData\\Roaming\\NuGet\\NuGet.Config",
