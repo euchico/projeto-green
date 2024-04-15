@@ -39,7 +39,7 @@ internal class Screen
         Console.WriteLine($"■ Tela: {screenTitle.ToUpper()} \n");
     }
 
-    internal static void ShowHeader(string screenTitle)
+    protected static void ShowHeader(string screenTitle)
     {
         Console.Clear();
 
@@ -47,7 +47,7 @@ internal class Screen
         ShowScreenTitle(screenTitle);
     }
 
-    internal virtual bool ScreenLoop() { return true; }
-    internal virtual bool ScreenLoop(string gameTag) { return true; }
-    internal virtual bool ScreenLoop(List<List<int>> draw) { return true; }
+    protected internal virtual bool ScreenLoop() { return true; }
+    protected internal virtual bool ScreenLoop(string gameTag) { return true; }
+    protected internal virtual bool ScreenLoop(List<List<int>> draw) { return true; }
 }

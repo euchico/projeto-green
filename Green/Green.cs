@@ -7,7 +7,7 @@ class Green
 {
     internal struct Game
     {
-        public Game(int id, string tag, string name)
+        internal Game(int id, string tag, string name)
         {
             Id = id;
             Tag = tag;
@@ -20,7 +20,7 @@ class Green
     }
 
     protected static TextManager? TextContent { get; set; }
-    public static string UserRecordFilePath = DataFile.GetDataFilePath("UserRecord.txt");
+    internal static string UserRecordFilePath = DataFile.GetDataFilePath("UserRecord.txt");
 
 
     static void Main(string[] args)

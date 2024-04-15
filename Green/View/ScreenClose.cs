@@ -6,7 +6,7 @@ internal class ScreenClose : Screen
 
     internal ScreenClose(string title) : base(title) { }
 
-    internal override bool ScreenLoop()
+    protected internal override bool ScreenLoop()
     {
         ShowMenu();
 

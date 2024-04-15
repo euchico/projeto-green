@@ -6,7 +6,7 @@ internal class ScreenStart : Screen
 
     internal ScreenStart(string title) : base(title) { }
 
-    internal override bool ScreenLoop()
+    protected internal override bool ScreenLoop()
     {
         ShowMenu();
 
@@ -40,7 +40,7 @@ internal class ScreenStart : Screen
         }
     }
 
-    private void SelectOption(int option)
+    protected void SelectOption(int option)
     {
         switch (option)
         {
