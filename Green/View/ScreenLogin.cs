@@ -8,7 +8,7 @@ internal class ScreenLogin : Screen
 
     internal ScreenLogin(string title) : base(title) { }
 
-    internal override bool ScreenLoop()
+    protected internal override bool ScreenLoop()
     {
         ShowMenu();
 

@@ -9,7 +9,7 @@ internal class ScreenUserCreate : Screen
 
     internal ScreenUserCreate(string title) : base(title) { }
 
-    internal override bool ScreenLoop()
+    protected internal override bool ScreenLoop()
     {
         ShowMenu();
 

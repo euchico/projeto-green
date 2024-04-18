@@ -9,7 +9,7 @@ namespace Green.View
 
         internal ScreenDraw(string title) : base(title) { }
 
-        internal override bool ScreenLoop(string gameTag)
+        protected internal override bool ScreenLoop(string gameTag)
         {
             selectedGameTag = gameTag;
 
@@ -27,7 +27,7 @@ namespace Green.View
         private void ShowMenu()
         {
             Console.WriteLine("#1 - Sorteio Simples");
-            Console.WriteLine("#2 - Sorteio Parametrizado  ");
+            Console.WriteLine("#2 - Sorteio Parametrizado");
 
             Console.WriteLine("\n#0 - Sair\n");
 
@@ -52,7 +52,7 @@ namespace Green.View
             switch (option)
             {
                 case 1:
-                    Console.WriteLine("Seleção: Sorteio Simples");
+                    Console.WriteLine("\nSeleção: Sorteio Simples");
                     Console.Write("Quantidade de Sorteios: ");
                     int numberOfDraws = int.Parse(Console.ReadLine()!);
 
@@ -62,26 +62,17 @@ namespace Green.View
                     screenDraw.ScreenLoop(draw.SimpleDraw(numberOfDraws));
 
                     Console.ReadKey();
-
                     break;
-
-                //case 2:
-                //    Console.WriteLine("ANÁLISE!!!" + selectedGameTag);
-                //    Thread.Sleep(3000);
-
-                //    break;
 
                 case 0:
                     Screen screenMenuMain = new ScreenMenuGames("seleção de jogo");
                     bool statusScreenMain = screenMenuMain.ScreenLoop();
-
                     break;
 
                 default:
                     TextContent.ShowErroMessage("ErrorInvalidOption");
                     break;
             }
-
         }
     }
 }

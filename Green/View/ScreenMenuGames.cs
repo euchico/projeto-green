@@ -8,7 +8,7 @@ internal class ScreenMenuGames : Screen
 
     internal ScreenMenuGames(string title) : base(title) { }
 
-    internal override bool ScreenLoop()
+    protected internal override bool ScreenLoop()
     {
         ShowMenu();
 

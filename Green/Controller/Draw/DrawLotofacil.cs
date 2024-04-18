@@ -25,13 +25,13 @@ internal class DrawLotofacil : Draw
                 }
             }
 
-            drawList.Add(drawSingle);
+            drawList.Add(new List<int>(drawSingle));
             drawSingle.Clear();
 
+            countNumbers = 0;
             countDraws++;
         }
 
         return drawList;
     }
-
 }

@@ -9,7 +9,7 @@ internal class ScreenMenuTasks : Screen
 
     internal ScreenMenuTasks(string title) : base(title) { }
 
-    internal override bool ScreenLoop(string gameTag)
+    protected internal override bool ScreenLoop(string gameTag)
     {
         selectedGameTag = gameTag;
 
@@ -27,8 +27,8 @@ internal class ScreenMenuTasks : Screen
     private void ShowMenu()
     {
         Console.WriteLine("#1 - Sorteio");
-        //Console.WriteLine("#2 - Análise");
-        //Console.WriteLine("#3 - Estatística");
+        Console.WriteLine("#2 - Análise");
+        Console.WriteLine("#3 - Estatística");
 
         Console.WriteLine("\n#0 - Sair\n");
 
@@ -56,18 +56,6 @@ internal class ScreenMenuTasks : Screen
 
                 break;
 
-            //case 2:
-            //    Console.WriteLine("ANÁLISE!!!" + selectedGameTag);
-            //    Thread.Sleep(3000);
-
-            //    break;
-
-            //case 3:
-            //    Console.WriteLine("ESTATÍSTICA!!!" + selectedGameTag);
-            //    Thread.Sleep(3000);
-
-            //    break;
-
             case 0:
                 Screen screenMenuMain = new ScreenMenuGames("seleção de jogo");
                 bool statusScreenMain = screenMenuMain.ScreenLoop();
@@ -78,6 +66,5 @@ internal class ScreenMenuTasks : Screen
                 TextContent.ShowErroMessage("ErrorInvalidOption");
                 break;
         }
-
     }
 }
