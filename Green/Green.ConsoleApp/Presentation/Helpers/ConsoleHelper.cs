@@ -1,4 +1,4 @@
-﻿namespace Green.ConsoleApp.Utils;
+﻿namespace Green.ConsoleApp.Presentation.Helpers;
 
 public static class ConsoleHelper
 {

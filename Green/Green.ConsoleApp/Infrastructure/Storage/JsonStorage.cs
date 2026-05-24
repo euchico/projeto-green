@@ -1,10 +1,11 @@
-using System.Text.Json;
+﻿using System.Text.Json;
+using Green.ConsoleApp.Application.Interfaces;
 
-namespace Green.ConsoleApp.Utils;
+namespace Green.ConsoleApp.Infrastructure.Storage;
 
-public static class JsonStorage
+internal class JsonStorage : IFileStorage
 {
-    public static void SaveToFile<T>(T data, string filePath)
+    public void SaveToFile<T>(T data, string filePath)
     {
         var directory = Path.GetDirectoryName(filePath);
 

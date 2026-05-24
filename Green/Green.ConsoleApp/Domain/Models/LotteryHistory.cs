@@ -1,4 +1,4 @@
-namespace Green.ConsoleApp.Models;
+﻿namespace Green.ConsoleApp.Domain.Models;
 
 public class LotteryHistory
 {

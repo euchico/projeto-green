@@ -1,4 +1,4 @@
-﻿namespace Green.ConsoleApp.UseCases;
+﻿namespace Green.ConsoleApp.Application.UseCases;
 
 internal class ImportLotofacilHistoryResult
 {

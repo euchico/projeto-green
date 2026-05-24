@@ -1,6 +1,6 @@
-﻿using Green.ConsoleApp.Utils;
+﻿using Green.ConsoleApp.Presentation.Helpers;
 
-namespace Green.ConsoleApp.Views;
+namespace Green.ConsoleApp.Presentation.Views;
 
 internal class WelcomeScreen
 {

@@ -1,19 +1,20 @@
-using System.Data;
+Ôªøusing System.Data;
 using System.Globalization;
 using System.Text;
 using ExcelDataReader;
-using Green.ConsoleApp.Models;
-using Green.ConsoleApp.Utils;
+using Green.ConsoleApp.Application.Interfaces;
+using Green.ConsoleApp.Domain.Models;
+using Green.ConsoleApp.Domain.Validations;
 
-namespace Green.ConsoleApp.Services;
+namespace Green.ConsoleApp.Infrastructure.Services;
 
-public class ImportService
+internal class ExcelImportService : IExcelImporter
 {
     public LotteryHistory ImportLotofacilHistory(string filePath)
     {
         if (!File.Exists(filePath))
         {
-            throw new FileNotFoundException($"Arquivo n„o encontrado: {filePath}");
+            throw new FileNotFoundException($"Arquivo n√£o encontrado: {filePath}");
         }
 
         Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
@@ -53,17 +54,17 @@ public class ImportService
 
         if (contestColumn is null)
         {
-            throw new InvalidOperationException("N„o foi possÌvel identificar a coluna de concurso na planilha.");
+            throw new InvalidOperationException("N√£o foi poss√≠vel identificar a coluna de concurso na planilha.");
         }
 
         if (drawDateColumn is null)
         {
-            throw new InvalidOperationException("N„o foi possÌvel identificar a coluna de data na planilha.");
+            throw new InvalidOperationException("N√£o foi poss√≠vel identificar a coluna de data na planilha.");
         }
 
         if (numberColumns.Count != 15)
         {
-            throw new InvalidOperationException("N„o foi possÌvel identificar exatamente 15 colunas de dezenas na planilha.");
+            throw new InvalidOperationException("N√£o foi poss√≠vel identificar exatamente 15 colunas de dezenas na planilha.");
         }
 
         var draws = new List<LotteryDraw>();
@@ -79,7 +80,7 @@ public class ImportService
 
             if (!LotteryValidator.TryNormalizeDrawNumbers(numbers, out var normalizedNumbers, out var errorMessage))
             {
-                throw new InvalidOperationException($"Concurso {contestNumber} inv·lido. {errorMessage}");
+                throw new InvalidOperationException($"Concurso {contestNumber} inv√°lido. {errorMessage}");
             }
 
             draws.Add(new LotteryDraw
@@ -141,7 +142,7 @@ public class ImportService
 
         if (parsedValue <= 0)
         {
-            throw new InvalidOperationException("N˙mero do concurso inv·lido.");
+            throw new InvalidOperationException("N√∫mero do concurso inv√°lido.");
         }
 
         return parsedValue;
@@ -173,7 +174,7 @@ public class ImportService
             return date;
         }
 
-        throw new InvalidOperationException($"Data do sorteio inv·lida: {text}");
+        throw new InvalidOperationException($"Data do sorteio inv√°lida: {text}");
     }
 
     private static int ParseInteger(object value)
@@ -197,9 +198,10 @@ public class ImportService
 
         if (string.IsNullOrWhiteSpace(text) || !int.TryParse(text, out var parsedNumber))
         {
-            throw new InvalidOperationException($"Valor numÈrico inv·lido: {text}");
+            throw new InvalidOperationException($"Valor num√©rico inv√°lido: {text}");
         }
 
         return parsedNumber;
     }
 }
+

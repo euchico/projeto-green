@@ -1,18 +1,18 @@
-﻿using Green.ConsoleApp.UseCases;
-using Green.ConsoleApp.Utils;
-using Green.ConsoleApp.Views;
+﻿using Green.ConsoleApp.Application.UseCases;
+using Green.ConsoleApp.Presentation.Helpers;
+using Green.ConsoleApp.Presentation.Views;
 
-namespace Green.ConsoleApp.Contreoller;
+namespace Green.ConsoleApp.Presentation.Controllers;
 
 internal class LotofacilMenuController
 {
     private readonly LotofacilMenuScreen _lotofacilMenuScreen;
     private readonly ImportLotofacilHistoryUseCase _importLotofacilHistoryUseCase;
 
-    public LotofacilMenuController()
+    public LotofacilMenuController(ImportLotofacilHistoryUseCase importLotofacilHistoryUseCase)
     {
-        _lotofacilMenuScreen = new();
-        _importLotofacilHistoryUseCase = new ImportLotofacilHistoryUseCase();
+        _lotofacilMenuScreen = new LotofacilMenuScreen();
+        _importLotofacilHistoryUseCase = importLotofacilHistoryUseCase;
     }
 
     public void Run()

@@ -1,4 +1,4 @@
-﻿namespace Green.ConsoleApp.Views;
+﻿namespace Green.ConsoleApp.Presentation.Views;
 
 internal class LotofacilMenuScreen
 {

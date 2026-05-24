@@ -1,6 +1,9 @@
-﻿using Green.ConsoleApp.Contreoller;
-using Green.ConsoleApp.Utils;
-using Green.ConsoleApp.Views;
+﻿using Green.ConsoleApp.Application.UseCases;
+using Green.ConsoleApp.Infrastructure.Services;
+using Green.ConsoleApp.Infrastructure.Storage;
+using Green.ConsoleApp.Presentation.Controllers;
+using Green.ConsoleApp.Presentation.Helpers;
+using Green.ConsoleApp.Presentation.Views;
 
 namespace Green.ConsoleApp;
 
@@ -11,8 +14,14 @@ internal class App
 
     public App()
     {
-        _welcomeScreen = new();
-        _mainMenuController = new MainMenuController();
+        var importLotofacilHistoryUseCase = new ImportLotofacilHistoryUseCase(
+            new ExcelImportService(),
+            new JsonStorage());
+
+        var lotofacilMenuController = new LotofacilMenuController(importLotofacilHistoryUseCase);
+
+        _welcomeScreen = new WelcomeScreen();
+        _mainMenuController = new MainMenuController(lotofacilMenuController);
     }
 
     public void Run()

@@ -1,17 +1,17 @@
-﻿using Green.ConsoleApp.Utils;
-using Green.ConsoleApp.Views;
+﻿using Green.ConsoleApp.Presentation.Helpers;
+using Green.ConsoleApp.Presentation.Views;
 
-namespace Green.ConsoleApp.Contreoller;
+namespace Green.ConsoleApp.Presentation.Controllers;
 
 internal class MainMenuController
 {
     private readonly MainMenuScreen _mainMenuScreen;
     private readonly LotofacilMenuController _lotofacilMenuController;
 
-    public MainMenuController()
+    public MainMenuController(LotofacilMenuController lotofacilMenuController)
     {
-        _mainMenuScreen = new();
-        _lotofacilMenuController = new LotofacilMenuController();
+        _mainMenuScreen = new MainMenuScreen();
+        _lotofacilMenuController = lotofacilMenuController;
     }
 
     public void Run()

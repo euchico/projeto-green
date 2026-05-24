@@ -1,4 +1,4 @@
-namespace Green.ConsoleApp.Utils;
+﻿namespace Green.ConsoleApp.Domain.Validations;
 
 public static class LotteryValidator
 {
@@ -21,7 +21,7 @@ public static class LotteryValidator
 
         if (normalizedNumbers.Distinct().Count() != 15)
         {
-            errorMessage = "N�o pode haver dezenas repetidas no mesmo concurso.";
+            errorMessage = "Não pode haver dezenas repetidas no mesmo concurso.";
             return false;
         }
 
