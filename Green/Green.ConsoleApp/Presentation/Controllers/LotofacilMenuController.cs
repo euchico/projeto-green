@@ -7,16 +7,18 @@ namespace Green.ConsoleApp.Presentation.Controllers;
 internal class LotofacilMenuController
 {
     private readonly LotofacilMenuScreen _lotofacilMenuScreen;
-    private readonly ImportLotofacilHistoryUseCase _importLotofacilHistoryUseCase;
+    private readonly UpdateLotofacilHistoryUseCase _updateLotofacilHistoryUseCase;
 
-    public LotofacilMenuController(ImportLotofacilHistoryUseCase importLotofacilHistoryUseCase)
+    public LotofacilMenuController(UpdateLotofacilHistoryUseCase importLotofacilHistoryUseCase)
     {
         _lotofacilMenuScreen = new LotofacilMenuScreen();
-        _importLotofacilHistoryUseCase = importLotofacilHistoryUseCase;
+        _updateLotofacilHistoryUseCase = importLotofacilHistoryUseCase;
     }
 
     public void Run()
     {
+        UpdateLotofacilHistory();
+
         while (true)
         {
             var option = _lotofacilMenuScreen.Show();
@@ -24,7 +26,7 @@ internal class LotofacilMenuController
             switch (option)
             {
                 case "1":
-                    ImportLotofacilHistory();
+                    
                     ConsoleHelper.WaitForUser();
                     break;
                 case "0":
@@ -37,9 +39,9 @@ internal class LotofacilMenuController
         }
     }
 
-    private void ImportLotofacilHistory()
+    private void UpdateLotofacilHistory()
     {
-        var result = _importLotofacilHistoryUseCase.Execute();
+        var result = _updateLotofacilHistoryUseCase.Execute();
 
         if (result.IsSuccess)
         {

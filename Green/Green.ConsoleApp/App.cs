@@ -14,11 +14,11 @@ internal class App
 
     public App()
     {
-        var importLotofacilHistoryUseCase = new ImportLotofacilHistoryUseCase(
+        var updateLotofacilHistoryUseCase = new UpdateLotofacilHistoryUseCase(
             new ExcelImportService(),
             new JsonStorage());
 
-        var lotofacilMenuController = new LotofacilMenuController(importLotofacilHistoryUseCase);
+        var lotofacilMenuController = new LotofacilMenuController(updateLotofacilHistoryUseCase);
 
         _welcomeScreen = new WelcomeScreen();
         _mainMenuController = new MainMenuController(lotofacilMenuController);
@@ -28,7 +28,6 @@ internal class App
     {
         try
         {
-            Console.ForegroundColor = ConsoleColor.Green;
             _welcomeScreen.Show();
             _mainMenuController.Run();
         }

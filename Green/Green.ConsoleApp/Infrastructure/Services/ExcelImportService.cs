@@ -10,8 +10,10 @@ namespace Green.ConsoleApp.Infrastructure.Services;
 
 internal class ExcelImportService : IExcelImporter
 {
-    public LotteryHistory ImportLotofacilHistory(string filePath)
+    public LotteryHistory UpdateLotofacilHistory(string fileName)
     {
+        string filePath = GetDataFilePath(fileName);
+
         if (!File.Exists(filePath))
         {
             throw new FileNotFoundException($"Arquivo não encontrado: {filePath}");
@@ -44,6 +46,14 @@ internal class ExcelImportService : IExcelImporter
             LastImportDate = DateOnly.FromDateTime(DateTime.Today),
             Draws = draws
         };
+    }
+
+    private string GetDataFilePath(string fileName)
+    {
+        string executableLocation = AppDomain.CurrentDomain.BaseDirectory;
+        string projectRoot = Directory.GetParent(executableLocation).Parent.Parent.Parent.FullName;
+
+        return Path.Combine(projectRoot, "Data", "Raw", fileName);
     }
 
     private static List<LotteryDraw> ReadDrawsFromTable(DataTable table)

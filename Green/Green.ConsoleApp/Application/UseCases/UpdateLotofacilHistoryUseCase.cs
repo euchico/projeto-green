@@ -2,32 +2,32 @@
 
 namespace Green.ConsoleApp.Application.UseCases;
 
-internal class ImportLotofacilHistoryUseCase
+internal class UpdateLotofacilHistoryUseCase
 {
-    private const string RawFilePath = "Data/Raw/lotofacil.xlsx";
+    private const string RawFilePath = "lotofacil.xlsx";
     private const string ProcessedFilePath = "Data/Processed/lotofacil-history.json";
 
     private readonly IExcelImporter _excelImporter;
     private readonly IFileStorage _fileStorage;
 
-    public ImportLotofacilHistoryUseCase(IExcelImporter excelImporter, IFileStorage fileStorage)
+    public UpdateLotofacilHistoryUseCase(IExcelImporter excelImporter, IFileStorage fileStorage)
     {
         _excelImporter = excelImporter;
         _fileStorage = fileStorage;
     }
 
-    public ImportLotofacilHistoryResult Execute()
+    public UpdateLotofacilHistoryResult Execute()
     {
         try
         {
-            var history = _excelImporter.ImportLotofacilHistory(RawFilePath);
+            var history = _excelImporter.UpdateLotofacilHistory(RawFilePath);
             _fileStorage.SaveToFile(history, ProcessedFilePath);
 
-            return ImportLotofacilHistoryResult.Success(history.Draws.Count, ProcessedFilePath);
+            return UpdateLotofacilHistoryResult.Success(history.Draws.Count, ProcessedFilePath);
         }
         catch (Exception exception)
         {
-            return ImportLotofacilHistoryResult.Failure(exception.Message);
+            return UpdateLotofacilHistoryResult.Failure(exception.Message);
         }
     }
 }

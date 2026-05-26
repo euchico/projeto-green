@@ -6,7 +6,9 @@ public static class ConsoleHelper
     {
         try
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Clear();
+
         }
         catch (IOException)
         {

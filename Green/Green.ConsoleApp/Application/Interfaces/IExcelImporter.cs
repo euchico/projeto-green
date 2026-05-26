@@ -4,5 +4,5 @@ namespace Green.ConsoleApp.Application.Interfaces;
 
 internal interface IExcelImporter
 {
-    LotteryHistory ImportLotofacilHistory(string filePath);
+    LotteryHistory UpdateLotofacilHistory(string filePath);
 }

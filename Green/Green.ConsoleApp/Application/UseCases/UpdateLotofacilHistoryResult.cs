@@ -1,15 +1,15 @@
 ﻿namespace Green.ConsoleApp.Application.UseCases;
 
-internal class ImportLotofacilHistoryResult
+internal class UpdateLotofacilHistoryResult
 {
     public bool IsSuccess { get; private set; }
     public int ImportedDrawsCount { get; private set; }
     public string OutputPath { get; private set; } = string.Empty;
     public string ErrorMessage { get; private set; } = string.Empty;
 
-    public static ImportLotofacilHistoryResult Success(int importedDrawsCount, string outputPath)
+    public static UpdateLotofacilHistoryResult Success(int importedDrawsCount, string outputPath)
     {
-        return new ImportLotofacilHistoryResult
+        return new UpdateLotofacilHistoryResult
         {
             IsSuccess = true,
             ImportedDrawsCount = importedDrawsCount,
@@ -17,9 +17,9 @@ internal class ImportLotofacilHistoryResult
         };
     }
 
-    public static ImportLotofacilHistoryResult Failure(string errorMessage)
+    public static UpdateLotofacilHistoryResult Failure(string errorMessage)
     {
-        return new ImportLotofacilHistoryResult
+        return new UpdateLotofacilHistoryResult
         {
             IsSuccess = false,
             ErrorMessage = errorMessage

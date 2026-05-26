@@ -1,6 +1,6 @@
 ﻿namespace Green.ConsoleApp;
 
-internal class Program
+internal class ConsoleApp
 {
     static void Main(string[] args)
     {
